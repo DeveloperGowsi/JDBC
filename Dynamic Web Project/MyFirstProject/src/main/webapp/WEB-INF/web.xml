@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>MyFirstProject</display-name>
+  <welcome-file-list>
+    
+    <welcome-file>myfirstproject.html</welcome-file>
+  </welcome-file-list>
+  
+ <servlet-mapping>
+ 
+  <servlet-name>welcomefile</servlet-name>
+  <url-pattern>/welcome</url-pattern>
+  
+ </servlet-mapping>
+ 
+ <servlet>
+ 
+  <servlet-name>welcomefile</servlet-name>
+  <servlet-class>com.ga.Welcomepage</servlet-class>
+  
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>Secondservlet</servlet-name>
+ <url-pattern>/firstpage</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>Secondservlet</servlet-name>
+ <servlet-class>com.ga.Firstpage</servlet-class>
+ </servlet>
+ 
+ <servlet>
+ 
+ 
+  <servlet-name>Thirdservlet</servlet-name>
+   <servlet-class>com.ga.Thirdservlet</servlet-class>
+
+ </servlet>
+ 
+ <servlet-mapping>
+    <servlet-name>Thirdservlet</servlet-name>
+    <url-pattern>/thirdpage</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+</web-app>
